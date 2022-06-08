@@ -230,5 +230,6 @@ section #box2 button:disabled {
 
     section #box2 {
         margin-top: 1.5rem;
+        gap: 2rem;
     }
 }
