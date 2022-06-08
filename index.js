@@ -11,10 +11,10 @@ reset.disabled = isFalse;
 reset.addEventListener("click", function () {
   bill.textContent = "";
   people.textContent = "";
-  totalAmount.textContent = "";
-  total.textContent = "";
+  totalAmount.textContent = "0.00";
+  total.textContent = "0.00";
   people.textContent = "";
-  tipAmounted.textContent = "";
+  tipAmounted.textContent = "0.00";
 
   btnsTip.forEach((btn) => {
     btn.classList.remove("tip-active");
