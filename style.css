@@ -185,6 +185,10 @@ section #box2 button:disabled {
         font-size: 65%;
     }
 
+    body {
+        overflow: hidden;
+    }
+
     section {
         display: grid;
         grid-template-columns: 1fr;
