@@ -21,7 +21,7 @@ body {
     box-sizing: border-box;
     display: grid;
     place-content: center;
-    height: 100vh;
+    min-height: 100vh;
     font-family: 'Space Mono', monospace;
 }
 
@@ -183,6 +183,11 @@ section #box2 button:disabled {
 @media screen and (max-width: 608px) {
     html {
         font-size: 65%;
+    }
+
+    body {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
     }
 
     section {
