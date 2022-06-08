@@ -60,10 +60,6 @@ section #box1 .input {
     background-color: var(--light-blue);
 }
 
-/* section #box1 .input:active {
-    border: 1px solid var(--light-green)
-} */
-
 .input-valid {
     border: 1px solid #599C9A;
 }
@@ -172,8 +168,14 @@ section #box2 button {
     font-weight: bold;
 }
 
+section #box2 button {
+    color: #fff;
+    font-size: 1.02rem;
+}
+
 section #box2 button:disabled {
     cursor: not-allowed;
+    color: rgba(255, 255, 255, 0.425);
 }
 
 .btn-active {

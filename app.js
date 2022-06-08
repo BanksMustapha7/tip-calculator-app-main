@@ -24,9 +24,13 @@ const getTip = () => {
     totalAmount.textContent = totalAmountValue.toFixed(2);
     totalValue = totalAmountValue * peopleValue;
     total.textContent = totalValue.toFixed(2);
+    isFalse = false;
+    reset.disabled = isFalse;
   }
   // if values have not been assigned
-  else console.log("Values are missing");
+  else {
+    isFalse = true;
+  }
 };
 const calcTotalAmout = () => {};
 
