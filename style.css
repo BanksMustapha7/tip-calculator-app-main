@@ -52,7 +52,7 @@ section #box2 {
 }
 
 section #box1 .input {
-   display: flex;
+    display: flex;
     padding: .5rem;
     font-size: 1.25rem;
     background-color: var(--light-blue);
@@ -190,6 +190,8 @@ section #box2 button:disabled {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         margin-top: 2rem;
+        overflow: hidden;
+        width: 100vw;
     }
 
     section {
@@ -204,6 +206,8 @@ section #box2 button:disabled {
         border-top-right-radius: 15px;
         max-width: 500px;
         margin: 0 auto;
+        position: absolute;
+        width: 100%;
     }
 
     section #box1 {
