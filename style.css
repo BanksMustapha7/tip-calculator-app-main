@@ -202,10 +202,10 @@ section #box2 button:disabled {
         border-radius: unset;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        max-width: 500px;
-        margin: 2rem auto;
-        height: 100vh;
+        /* max-width: 500px; */
+        margin: 2.5rem auto;
         width: 100vw;
+        height: 100%;
     }
 
     section #box1 {
