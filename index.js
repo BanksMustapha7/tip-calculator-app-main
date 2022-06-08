@@ -9,11 +9,10 @@ let isFalse = true;
 reset.disabled = isFalse;
 
 reset.addEventListener("click", function () {
-  bill.textContent = "";
-  people.textContent = "";
+  bill.value = "";
+  people.value = "";
   totalAmount.textContent = "0.00";
   total.textContent = "0.00";
-  people.textContent = "";
   tipAmounted.textContent = "0.00";
 
   btnsTip.forEach((btn) => {
