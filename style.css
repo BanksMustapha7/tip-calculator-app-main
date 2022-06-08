@@ -214,12 +214,12 @@ section #box2 button:disabled {
     }
 
     section #box2 {
-        /* width: 25rem; */
-        width: 100%;
+        width: 25rem;
+        /* width: 100%; */
         height: 20rem;
         border-radius: 10px;
         /* padding: 1rem 1.5rem; */
-        position: relative;
+        position: fixed;
         bottom: 0;
     }
 
