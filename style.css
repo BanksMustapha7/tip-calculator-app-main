@@ -60,9 +60,9 @@ section #box1 .input {
     background-color: var(--light-blue);
 }
 
-section #box1 .input:active {
+/* section #box1 .input:active {
     border: 1px solid var(--light-green)
-}
+} */
 
 .input-valid {
     border: 1px solid #599C9A;

@@ -1,16 +1,5 @@
-let billValue, peopleValue, tipPercent;
+let billValue, peopleValue, tipAmount;
 const btnsTip = document.querySelectorAll(".btn-tip");
-
-btnsTip.forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    btnsTip.forEach((btn) => btn.classList.remove("tip-active"));
-
-    // btn.classList.add("tip-active"); (also working)
-    e.currentTarget.classList.add("tip-active");
-    tipPercent = btn.value;
-    console.log(tipPercent);
-  });
-});
 
 bill.addEventListener("input", function (e) {
   billValue = e.target.value;
@@ -21,19 +10,33 @@ people.addEventListener("input", function (e) {
   console.log(peopleValue);
 });
 
-const getTip = () => {};
+const getTip = () => {
+  if (billValue && tipPercent) {
+    console.log("All values present");
+    tipAmount = ((tipPercent / 100) * billValue).toFixed(2);
+    console.log(tipAmount);
+    reset.disabled = false;
+    tipAmounted.textContent = tipAmount;
+  } else console.log("Values are missing");
+};
 const calcTotals = () => {};
 
-function calculate() {
-  reset.disabled = false;
-  if ((billValue, peopleValue, tipPercent)) {
-    tip = (tipPercent / 100) * billValue;
-    console.log(tip);
-  }
-}
+bill.addEventListener("input", getTip);
+people.addEventListener("input", getTip);
 
-bill.addEventListener("input", calculate);
-people.addEventListener("input", calculate);
+btnsTip.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    btnsTip.forEach((btn) => {
+      btn.classList.remove("tip-active");
+      // btn.addEventListener("input", getTip);
+    });
 
+    // btn.classList.add("tip-active"); (also working)
+    e.currentTarget.classList.add("tip-active");
+    tipPercent = btn.value;
+    console.log(tipPercent);
+  });
+  btn.addEventListener("click", getTip);
+});
 
 //to local string for comma
