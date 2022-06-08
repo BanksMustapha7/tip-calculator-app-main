@@ -197,6 +197,9 @@ section #box2 button:disabled {
         min-height: 92.5vh;
         padding-bottom: 1rem !important;
         margin-bottom: 0;
+        border-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
 
     section #box1 {
