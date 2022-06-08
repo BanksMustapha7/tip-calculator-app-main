@@ -21,7 +21,7 @@ body {
     box-sizing: border-box;
     display: grid;
     place-content: center;
-    min-height: 100vh;
+    margin: 10rem auto;
     font-family: 'Space Mono', monospace;
 }
 
@@ -29,7 +29,7 @@ section {
     padding: 1.5rem;
     background-color: #fff;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     border-radius: 15px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -38,7 +38,6 @@ section {
 section #box1,
 section #box2 {
     width: 25rem;
-    height: 25rem;
     border-radius: 10px;
     padding: 1rem 1.5rem;
 }
@@ -53,10 +52,9 @@ section #box2 {
 }
 
 section #box1 .input {
-    display: grid;
+   display: flex;
     padding: .5rem;
     font-size: 1.25rem;
-    grid-template-columns: 20% auto;
     background-color: var(--light-blue);
 }
 
@@ -74,6 +72,7 @@ section #box1 .input input {
     text-align: right;
     font-weight: 700;
     color: #0E4747;
+    width: 100%;
 }
 
 section #box1 .grid {
@@ -190,40 +189,32 @@ section #box2 button:disabled {
     body {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
+        margin-top: 2rem;
     }
 
     section {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 55% 45%;
-        grid-row-gap: 1rem;
-        width: 100vw;
-        position: absolute;
+        display: flex;
+        flex-direction: column;
+        grid-gap: 1rem;
         padding: 2rem 2.25rem;
         bottom: 0;
-        min-height: 92.5vh;
         padding-bottom: 1rem !important;
-        margin-bottom: 0;
         border-radius: 0;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
     section #box1 {
         width: 100%;
-        position: absolute;
-        z-index: 2;
     }
 
     section #box2 {
         /* width: 25rem; */
         width: 100%;
-        height: 20rem;
         border-radius: 10px;
         /* padding: 1rem 1.5rem; */
-        position: absolute;
-        z-index: 0;
-        bottom: 0;
     }
 
     section #box1 .grid button {
