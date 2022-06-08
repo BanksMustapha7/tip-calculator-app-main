@@ -1,4 +1,4 @@
-let billValue, peopleValue, tipAmount, totalAmountValue;
+let billValue, peopleValue, tipAmount, totalAmountValue, totalValue;
 const btnsTip = document.querySelectorAll(".btn-tip");
 
 bill.addEventListener("input", function (e) {
@@ -21,9 +21,9 @@ const getTip = () => {
     tipAmounted.textContent = tipAmount;
     totalAmountValue = Number(tipAmount) + billValue;
 
-    console.log(typeof billValue, billValue);
-    console.log(totalAmountValue);
-    totalAmount.textContent = totalAmountValue;
+    totalAmount.textContent = totalAmountValue.toFixed(2);
+    totalValue = totalAmountValue * peopleValue;
+    total.textContent = totalValue.toFixed(2);
   }
   // if values have not been assigned
   else console.log("Values are missing");
