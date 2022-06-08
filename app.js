@@ -19,11 +19,11 @@ const getTip = () => {
     tipAmount = ((tipPercent / 100) * billValue).toFixed(2);
     console.log(tipAmount);
     tipAmounted.textContent = tipAmount;
-    totalAmountValue = Number(tipAmount) + billValue;
+    totalAmountValue = (Number(tipAmount) + billValue).toFixed(2);
 
-    totalAmount.textContent = totalAmountValue.toFixed(2);
-    totalValue = totalAmountValue * peopleValue;
-    total.textContent = totalValue.toFixed(2);
+    totalAmount.textContent = totalAmountValue.toLocaleString();
+    totalValue = (totalAmountValue * peopleValue).toFixed(2);
+    total.textContent = Number(totalValue).toLocaleString();
     isFalse = false;
     reset.disabled = isFalse;
   }

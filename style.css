@@ -219,6 +219,8 @@ section #box2 button:disabled {
         height: 20rem;
         border-radius: 10px;
         /* padding: 1rem 1.5rem; */
+        position: relative;
+        bottom: 0;
     }
 
     section #box1 .grid button {
