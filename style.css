@@ -192,9 +192,10 @@ section #box2 button:disabled {
         grid-row-gap: 1rem;
         width: 100vw;
         position: absolute;
-        padding: 2rem 2.5rem;
+        padding: 2rem 2.25rem;
         bottom: 0;
-        height: 87.5vh;
+        min-height: 87.5vh;
+        padding-bottom: 1rem !important;
         margin-bottom: 0;
     }
 
@@ -208,5 +209,9 @@ section #box2 button:disabled {
         height: 20rem;
         border-radius: 10px;
         padding: 1rem 1.5rem;
+    }
+
+    section #box1 .grid button {
+        padding: 1rem;
     }
 }
