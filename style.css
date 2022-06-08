@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --green: #00474B;
+    --light-blue: #F3F8FB;
+    --light-green: #9FE8DF;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #C5E4E7;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+}
+
+section {
+    padding: 1.5rem;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 1rem;
+    border-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+section #box1,
+section #box2 {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+}
+
+section #box1 {
+    display: grid;
+    gap: 1.5rem;
+}
+
+section #box2 {
+    background-color: var(--green);
+}
+
+section #box1 .input {
+    display: grid;
+    padding: .5rem;
+    font-size: 1.25rem;
+    grid-template-columns: 20% auto;
+    background-color: var(--light-blue);
+}
+
+section #box1 .input:active {
+    border: 1px solid var(--light-green)
+}
+
+.input-valid {
+    border: 1px solid #599C9A;
+}
+
+.input-invalid {
+    border: 1px solid #F7C6BB;
+}
+
+section #box1 .input input {
+    background-color: var(--light-blue);
+    font-size: 1.35rem;
+    text-align: right;
+    font-weight: 700;
+    color: #0E4747;
+}
+
+section #box1 .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+#sTip {
+    color: rgb(53, 48, 48);
+    font-size: .95rem;
+}
+
+section #box1 .grid button {
+    text-align: center;
+    padding: .5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: ease-in all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tip-active {
+    background-color: var(--light-green) !important;
+}
+
+section #box1 .grid button:hover {
+    background-color: var(--light-green) !important;
+    cursor: pointer;
+}
+
+section #box1 .grid div:focus {
+    background-color: var(--light-green) !important;
+}
+
+section #box1 .grid button:not(:last-child) {
+    background-color: var(--green);
+    color: #fff;
+}
+
+section #box1 .grid button:last-child {
+    background-color: var(--light-blue);
+    color: var(--green);
+}
+
+section #box2 {
+    color: #fff;
+    display: flex;
+    padding: 2.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section #box2 div {
+    display: grid;
+    grid-row-gap: 1rem;
+}
+
+section #box2 div .row {
+    display: flex;
+    justify-content: space-between;
+    gap: .5rem;
+    align-items: center;
+}
+
+section #box2 div .row .row-details {
+    display: grid;
+    grid-row-gap: .2rem;
+}
+
+section #box2 div .row .row-details h2 {
+    font-size: 1rem;
+}
+
+section #box2 div .row .row-details h3 {
+    color: #055D61;
+    font-size: .85rem;
+}
+
+section #box2 div .row .money {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #23c3ab;
+}
+
+section #box2 button {
+    justify-self: flex-end;
+    padding: 1rem 0;
+    background-color: #0D686D;
+    color: #055D61;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+section #box2 button:disabled {
+    cursor: not-allowed;
+}
+
+.btn-active {
+    background-color: var(--light-green);
+}
+
+@media screen and (max-width: 608px) {
+    html {
+        font-size: 65%;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55% 45%;
+        grid-row-gap: 1rem;
+        width: 100vw;
+        position: absolute;
+        bottom: 0;
+        height: 85vh;
+    }
+
+    section #box1 {
+        width: 100%;
+    }
+
+    section #box2 {
+        /* width: 25rem; */
+        width: 100%;
+        height: 20rem;
+        border-radius: 10px;
+        padding: 1rem 1.5rem;
+    }
+}

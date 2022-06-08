@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <section>
+    <div id="box1">
+      <h1>Bill</h1>
+
+      <div class="input" id="billBox">
+        <h4>&#x20A6;</h4>
+        <input type="number" name="" min="1" max="1000" id="bill" placeholder="0">
+      </div>
+
+      <h3 id="sTip">Select Tip %</h3>
+      <div class="grid">
+        <button id="row1" class="btn-tip" value="5">5</button>
+        <button id="row2" class="btn-tip" value="10">10</button>
+        <button id="row3" class="btn-tip" value="15">15</button>
+        <button id="row4" class="btn-tip" value="25">25</button>
+        <button id="row5" class="btn-tip" value="50">50</button>
+        <button id="row6" class="btn-tip">Custom</button>
+      </div>
+
+      <div>
+        <h3>Number of People</h3>
+        <div class="input" id="peopleBox">
+          <h4><img src="images/icon-person.svg" alt="" srcset=""></h4>
+          <input type="number" name="" id="people" placeholder="0">
+        </div>
+      </div>
+    </div>
+    <div id="box2">
+      <div>
+
+        <div class="row" id="row1">
+          <div class="row-details">
+            <h2>Tip Amount</h2>
+            <h3>/ Person</h3>
+          </div>
+          <div class="money">&#x20A6;<span id="tipAmount">0.00</span></div>
+        </div>
+        <div class="row" id="row2">
+          <div class="row-details">
+            <h2>Total</h2>
+            <h3>/ Person</h3>
+          </div>
+          <div class="money">&#x20A6;<span id="total">0.00</span></div>
+        </div>
+      </div>
+      <button id="resetBtn" disabled> RESET</button>
+    </div>
+  </section> 
+
+  <script src="index.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
