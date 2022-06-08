@@ -14,6 +14,7 @@ reset.addEventListener("click", function () {
   totalAmount.textContent = "";
   total.textContent = "";
   people.textContent = "";
+  tipAmounted.textContent = "";
 
   btnsTip.forEach((btn) => {
     btn.classList.remove("tip-active");

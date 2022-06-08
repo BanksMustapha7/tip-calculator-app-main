@@ -199,12 +199,11 @@ section #box2 button:disabled {
         grid-gap: 1rem;
         padding: 2rem 2.25rem;
         bottom: 0;
-        /* padding-bottom: 1rem !important; */
         border-radius: 0;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         max-width: 500px;
-        margin: 5rem auto;
+        margin: 4rem auto;
         width: 100vw;
     }
 
