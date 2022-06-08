@@ -203,7 +203,7 @@ section #box2 button:disabled {
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         /* max-width: 500px; */
-        margin: 2.5rem auto;
+        margin: 2rem auto;
         width: 100vw;
         height: 100%;
     }
