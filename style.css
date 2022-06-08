@@ -204,6 +204,7 @@ section #box2 button:disabled {
         border-top-right-radius: 15px;
         max-width: 500px;
         margin: 2rem auto;
+        height: 100vh;
         width: 100vw;
     }
 
