@@ -196,14 +196,14 @@ section #box2 button:disabled {
     section {
         display: flex;
         flex-direction: column;
-        grid-gap: 1rem;
+        gap: 2rem;
         padding: 2rem 2.25rem;
         bottom: 0;
-        border-radius: 0;
+        border-radius: unset;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         max-width: 500px;
-        margin: 4rem auto;
+        margin: 2rem auto;
         width: 100vw;
     }
 
