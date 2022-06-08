@@ -197,13 +197,13 @@ section #box2 button:disabled {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        padding: 2.2rem 2.5rem;
+        padding: 2rem 2.25rem;
         bottom: 0;
         border-radius: unset;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
         /* max-width: 500px; */
-        margin-top: -1rem;
+        margin: 2.5rem auto;
         width: 100vw;
         height: 100%;
     }
@@ -221,12 +221,6 @@ section #box2 button:disabled {
 
     section #box1 .grid button {
         padding: 1rem;
-    }
-
-    section #box1 .grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1rem;
     }
 
     section #box1 .input {
