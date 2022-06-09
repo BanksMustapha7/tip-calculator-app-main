@@ -16,23 +16,29 @@ const getTip = () => {
   //if billValue and tip percent have been assigned values code below should take place
   if (billValue && tipPercent && peopleValue) {
     console.log("All values present");
-    tipAmount = ((tipPercent / 100) * billValue).toFixed(2);
-    console.log(tipAmount);
-    tipAmounted.textContent = tipAmount;
-    totalAmountValue = (Number(tipAmount) + billValue).toFixed(2);
 
+    //gets the tip amount by multiplying tip percent by the bill
+    tipAmount = ((tipPercent / 100) * billValue).toFixed(2);
+    tipAmounted.textContent = tipAmount;
+
+    //gets total amount by adding tip amount to bill
+    totalAmountValue = (Number(tipAmount) + billValue).toFixed(2);
     totalAmount.textContent = totalAmountValue.toLocaleString();
+
+    //calculates the total by multiplying total amount by number of people
     totalValue = (totalAmountValue * peopleValue).toFixed(2);
     total.textContent = Number(totalValue).toLocaleString();
+
+    // enables the reset button
     isFalse = false;
     reset.disabled = isFalse;
   }
   // if values have not been assigned
   else {
+    // if values have not been assigned it disables the reset button
     isFalse = true;
   }
 };
-const calcTotalAmout = () => {};
 
 //adds the event listeners to bill and people input, calls upon the function on every input
 bill.addEventListener("input", getTip);
@@ -52,3 +58,9 @@ btnsTip.forEach((btn) => {
   });
   btn.addEventListener("click", getTip);
 });
+
+cInput.addEventListener("input", function (e) {
+  tipPercent = e.target.value;
+  cInput.value = "";
+});
+cInput.addEventListener("input", getTip);

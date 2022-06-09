@@ -25,6 +25,10 @@ body {
     font-family: 'Space Mono', monospace;
 }
 
+.hidden {
+    display: none !important;
+}
+
 section {
     padding: 1.5rem;
     background-color: #fff;
@@ -115,6 +119,17 @@ section #box1 .grid button:not(:last-child) {
 section #box1 .grid button:last-child {
     background-color: var(--light-blue);
     color: var(--green);
+}
+
+.input-custom {
+    font-size: 1.4rem;
+    display: grid;
+    grid-template-columns: 90% auto;
+    margin-top: -1.5rem;
+}
+
+.input-custom input {
+    text-align: left !important;
 }
 
 section #box2 {

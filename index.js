@@ -4,6 +4,9 @@ let tipAmounted = document.getElementById("tipAmount");
 let total = document.getElementById("total");
 const reset = document.getElementById("resetBtn");
 const totalAmount = document.getElementById("totalAmount");
+const customBtn = document.getElementById("row6");
+const customInput = document.querySelector(".input-custom");
+const cInput = document.getElementById("customInput");
 
 let isFalse = true;
 reset.disabled = isFalse;
@@ -20,16 +23,10 @@ reset.addEventListener("click", function () {
   });
 });
 
-// function onInputCheck(prop, propValue) {
-//   if (propValue.value > 0) prop.classList.add("input-valid");
-//   else if (propValue.value < 0) prop.classList.add("input-invalid");
-//   else {
-//     prop.classList.remove("input-vaild");
-//     prop.classList.remove("input-invalid");
-//   }
-// }
-// function onInputExit(prop) {
-//   prop.classList.remove("input-valid");
-// }
-// // bill.addEventListener("input", onInputCheck(billBox, bill));
-// people.addEventListener("input", onInputCheck(peopleBox, people));
+customBtn.addEventListener("click", function () {
+  btnsTip.forEach((btn) => {
+    btn.classList.add("hidden");
+  });
+
+  customInput.classList.remove("hidden");
+});
