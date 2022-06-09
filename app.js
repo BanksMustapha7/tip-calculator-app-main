@@ -61,6 +61,5 @@ btnsTip.forEach((btn) => {
 
 cInput.addEventListener("input", function (e) {
   tipPercent = e.target.value;
-  cInput.value = "";
 });
 cInput.addEventListener("input", getTip);
