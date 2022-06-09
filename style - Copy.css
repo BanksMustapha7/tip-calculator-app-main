@@ -124,21 +124,17 @@ section #box1 .grid button {
     font-weight: bold;
     transition: ease-in all cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
 .tip-active {
     background-color: var(--light-green) !important;
 }
-
 section #box1 .grid button:hover {
     background-color: var(--light-green) !important;
     cursor: pointer;
 }
-
 section #box1 .grid button:not(:last-child) {
     background-color: var(--green);
     color: #fff;
 }
-
 .darkmode-btnTip {
     background-color: var(--light-green) !important;
 }
@@ -146,6 +142,7 @@ section #box1 .grid button:not(:last-child) {
 .darkmode-btnTip:hover {
     background-color: var(--green) !important;
 }
+
 
 section #box1 .grid button:last-child {
     background-color: var(--light-blue);

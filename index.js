@@ -7,6 +7,7 @@ const totalAmount = document.getElementById("totalAmount");
 const customBtn = document.getElementById("row6");
 const customInput = document.querySelector(".input-custom");
 const cInput = document.getElementById("customInput");
+const modeSwitch = document.getElementById("modeSwitch");
 
 let isFalse = true;
 reset.disabled = isFalse;
@@ -39,4 +40,14 @@ customBtn.addEventListener("click", function () {
   });
 
   customInput.classList.remove("hidden");
+});
+modeSwitch.addEventListener("click", function () {
+  document.body.classList.toggle("darkmode-body");
+  modeSwitch.textContent === "Switch to dark mode"
+    ? (modeSwitch.textContent = "Switch to light mode")
+    : (modeSwitch.textContent = "Switch to dark mode");
+  document.querySelector("section").classList.toggle("darkmode-section");
+  document.getElementById("sTip").classList.toggle("darkmode-sTip");
+  document.getElementById("bll").classList.toggle("darkmode-h1");
+  // document.querySelector(".btnTip").classList.toggle("darkmode-btnTip");
 });
